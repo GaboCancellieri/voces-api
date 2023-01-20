@@ -1,7 +1,7 @@
-import express from "express";
+import { Router } from "express";
 import { HomeBannerController } from "../controllers";
 import { ROUTES } from "./constants";
-const api = express.Router();
+const api = Router();
 const rootURL = ROUTES.HOME_BANNER;
 
 api.get(rootURL, HomeBannerController.getAllHomeBanner);

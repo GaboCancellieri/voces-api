@@ -12,7 +12,9 @@ import { enableCors } from "./config/constants";
 dotenv.config();
 
 // IMPORT ROUTES
-import { HomeBannerRoutes } from "./routes";
+import { HomeBannerRoutes, UserRoutes } from "./routes";
+import { AuthRoutes } from "./auth";
+import ErrorHandler from "./utils/error";
 
 //CRON
 
@@ -52,7 +54,12 @@ class Server {
 
   routes() {
     /* las rutas de la app */
+    this.app.use(AuthRoutes);
     this.app.use(HomeBannerRoutes);
+    this.app.use(UserRoutes);
+
+    // Error Handler Middleware
+    this.app.use(ErrorHandler);
   }
 
   start() {

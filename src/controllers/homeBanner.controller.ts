@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { HomeBanner } from "../models";
-import { IHomeBanner } from "../types/homeBannerTypes";
+import { IHomeBanner } from "../types/IHomeBanner";
 
 const getAllHomeBanner = async (req: Request, res: Response) => {
   const homeBannerInfo: IHomeBanner | null = await HomeBanner.findOne({});

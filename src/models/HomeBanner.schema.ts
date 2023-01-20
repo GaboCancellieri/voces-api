@@ -1,5 +1,5 @@
 import { model, Schema } from "mongoose";
-import { IHomeBanner } from "../types/homeBannerTypes";
+import { IHomeBanner } from "../types/IHomeBanner";
 
 const HomeBannerSchema = new Schema({
   title: { type: String, require: true },
