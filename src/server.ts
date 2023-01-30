@@ -12,7 +12,7 @@ import { enableCors } from "./config/constants";
 dotenv.config();
 
 // IMPORT ROUTES
-import { HomeBannerRoutes, UserRoutes } from "./routes";
+import { HomeBannerRoutes, StreamingRoutes, UserRoutes } from "./routes";
 import { AuthRoutes } from "./auth";
 import ErrorHandler from "./utils/error";
 
@@ -56,6 +56,7 @@ class Server {
     /* las rutas de la app */
     this.app.use(AuthRoutes);
     this.app.use(HomeBannerRoutes);
+    this.app.use(StreamingRoutes);
     this.app.use(UserRoutes);
 
     // Error Handler Middleware

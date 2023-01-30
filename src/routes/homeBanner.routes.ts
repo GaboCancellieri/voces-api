@@ -8,4 +8,6 @@ api.get(rootURL, HomeBannerController.getAllHomeBanner);
 
 api.get(`${rootURL}/:id`, HomeBannerController.getHomeBannerById);
 
+api.patch(`${rootURL}/:id`, HomeBannerController.updateHomeBanner);
+
 export default api;
