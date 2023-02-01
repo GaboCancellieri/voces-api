@@ -30,7 +30,7 @@ const createShow = async (req: Request, res: Response, next: NextFunction) => {
       ]);
       res.status(201).json(newShow[0]);
     } else {
-      throw new CustomError(400, "Parámetros incompletos.");
+      throw new CustomError(400, "Parámetros incorrectos.");
     }
     return res;
   } catch (error: any) {
@@ -40,6 +40,18 @@ const createShow = async (req: Request, res: Response, next: NextFunction) => {
 
 const updateShow = async (req: Request, res: Response, next: NextFunction) => {
   try {
+    const { id } = req.params;
+    const { title, description, link, imageURL, isFeatured } = req.body;
+    if (id && title && description && link && imageURL) {
+      const newShow = await Show.findByIdAndUpdate(
+        id,
+        { title, description, link, imageURL, isFeatured },
+        { new: true }
+      );
+      res.status(200).json(newShow);
+    } else {
+      throw new CustomError(400, "Parámetros incorrectos.");
+    }
   } catch (error: any) {
     next(error);
   }
@@ -47,6 +59,13 @@ const updateShow = async (req: Request, res: Response, next: NextFunction) => {
 
 const deleteShow = async (req: Request, res: Response, next: NextFunction) => {
   try {
+    const { id } = req.params;
+    if (id) {
+      const deletedShow = await Show.findByIdAndDelete(id);
+      res.status(200).json(deletedShow);
+    } else {
+      throw new CustomError(400, "Parámetros incorrectos.");
+    }
   } catch (error: any) {
     next(error);
   }
