@@ -12,7 +12,14 @@ import { enableCors } from "./config/constants";
 dotenv.config();
 
 // IMPORT ROUTES
-import { HomeBannerRoutes, StreamingRoutes, UserRoutes } from "./routes";
+import {
+  ActivitiesCardsRoutes,
+  HomeBannerRoutes,
+  ProyectBannerRoutes,
+  ProyectAreasRoutes,
+  StreamingRoutes,
+  UserRoutes,
+} from "./routes";
 import { AuthRoutes } from "./auth";
 import ErrorHandler from "./utils/error";
 
@@ -54,8 +61,11 @@ class Server {
 
   routes() {
     /* las rutas de la app */
+    this.app.use(ActivitiesCardsRoutes);
     this.app.use(AuthRoutes);
     this.app.use(HomeBannerRoutes);
+    this.app.use(ProyectBannerRoutes);
+    this.app.use(ProyectAreasRoutes);
     this.app.use(StreamingRoutes);
     this.app.use(UserRoutes);
 
