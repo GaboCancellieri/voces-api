@@ -6,4 +6,5 @@ export const ROUTES = {
   PROYECT_AREAS: "/api/proyectAreas",
   ACTIVITIES_CARDS: "/api/activitiesCards",
   HOME_NEWS: "/api/homeNews",
+  HOME_STAFF: "/api/homeStaff",
 };

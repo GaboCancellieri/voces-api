@@ -4,3 +4,4 @@ export { default as ProyectBanner } from "./ProyectBanner.schema";
 export { default as ProyectAreas } from "./ProyectAreas.schema";
 export { default as ActivitiesCards } from "./ActivitiesCards.schema";
 export { default as HomeNews } from "./HomeNews.schema";
+export { default as HomeStaff } from "./HomeStaff.schema";

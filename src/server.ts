@@ -15,6 +15,7 @@ dotenv.config();
 import {
   ActivitiesCardsRoutes,
   HomeBannerRoutes,
+  HomeStaffRoutes,
   ProyectBannerRoutes,
   ProyectAreasRoutes,
   StreamingRoutes,
@@ -64,6 +65,7 @@ class Server {
     this.app.use(ActivitiesCardsRoutes);
     this.app.use(AuthRoutes);
     this.app.use(HomeBannerRoutes);
+    this.app.use(HomeStaffRoutes);
     this.app.use(ProyectBannerRoutes);
     this.app.use(ProyectAreasRoutes);
     this.app.use(StreamingRoutes);
