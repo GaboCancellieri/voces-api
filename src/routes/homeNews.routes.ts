@@ -10,4 +10,8 @@ api.get(`${rootURL}/:id`, HomeNewsController.getHomeNewsById);
 
 api.patch(`${rootURL}/:id`, HomeNewsController.updateHomeNews);
 
+api.post(`${rootURL}`, HomeNewsController.createHomeNews);
+
+api.delete(`${rootURL}/:id`, HomeNewsController.deleteHomeNews);
+
 export default api;

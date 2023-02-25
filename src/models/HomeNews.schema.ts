@@ -3,7 +3,7 @@ import { IHomeNews } from "../types/IHomeNews";
 
 const HomeNewsSchema = new Schema({
   imageURL: { type: String, require: false },
-  description: { type: String, require: true },
+  description: { type: String, require: false },
 });
 
 // Duplicate the ID field.
