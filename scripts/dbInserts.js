@@ -9,3 +9,49 @@ db.getCollection("proyect_banner").insert({
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 });
+
+db.getCollection("proyect_banner").insert({
+  title: "PROYECTO",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+});
+
+db.getCollection("home_staff").insert({
+  _id: ObjectId("63f0cf45c516ee5cfa3fb705"),
+  title: "Minita Random",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus velit a vehicula tempus. Sed facilisis tempus metus, eget pellentesque odio. Suspendisse pellentesque, justo rutrum elementum vulputate, leo quam mollis leo, eu bibendum nulla justo a nisi.",
+  imageURL:
+    "https://www.personal.com.ar/content/dam/teco-cms-ecosystem/personal/mi-personal/acceso-combos-tab1-desk.png",
+  __v: NumberInt(0),
+});
+
+db.getCollection("home_staff").insert({
+  _id: ObjectId("63f0d0abc516ee5cfa3fb718"),
+  title: "Gal ",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus velit a vehicula tempus. Sed facilisis tempus metus, eget pellentesque odio. Suspendisse pellentesque, justo rutrum elementum vulputate, leo quam mollis leo, eu bibendum nulla justo a nisi.",
+  imageURL:
+    "https://static01.nyt.com/images/2017/05/07/arts/07GAL-GADOTweb/07GAL-GADOTweb-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+  __v: NumberInt(0),
+});
+
+db.getCollection("home_staff").insert({
+  _id: ObjectId("63f0d12cc516ee5cfa3fb721"),
+  title: "Roberto ",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus velit a vehicula tempus. Sed facilisis tempus metus, eget pellentesque odio. Suspendisse pellentesque, justo rutrum elementum vulputate, leo quam mollis leo, eu bibendum nulla justo a nisi.",
+  imageURL:
+    "https://media.lacapital.com.ar/p/73a0adcbbe90676ccb3c7157205923e3/adjuntos/205/imagenes/011/158/0011158174/-_mujer_barbuda_travestijpg.jpg",
+  __v: NumberInt(0),
+});
+
+db.getCollection("home_staff").insert({
+  _id: ObjectId("63f0d14ec516ee5cfa3fb723"),
+  title: "La Vistima ",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus velit a vehicula tempus. Sed facilisis tempus metus, eget pellentesque odio. Suspendisse pellentesque, justo rutrum elementum vulputate, leo quam mollis leo, eu bibendum nulla justo a nisi.",
+  imageURL:
+    "https://media.lacapital.com.ar/p/73a0adcbbe90676ccb3c7157205923e3/adjuntos/205/imagenes/011/158/0011158174/-_mujer_barbuda_travestijpg.jpg",
+  __v: NumberInt(0),
+});
